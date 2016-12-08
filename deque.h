@@ -1,3 +1,5 @@
+//https://github.com/abgdezh/Deque
+
 #include <cstring>
 #include <iostream>
 
@@ -269,7 +271,7 @@ private:
         }
         if (posBegin <= posEnd) {
             memcpy(static_cast<void *>(newData), static_cast<void *>(data + posBegin),
-                    (posEnd - posBegin + 1) * sizeof(T));
+                   (posEnd - posBegin + 1) * sizeof(T));
         } else {
             size_t frontElements = (capacity - posBegin);
             size_t backElements = (posEnd + 1);
